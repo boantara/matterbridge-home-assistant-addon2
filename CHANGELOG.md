@@ -15,6 +15,13 @@ In the future, the add-on will be updated with each important new release of Mat
 
 - Removed support for armv7 architecture that is [deprecated by Home Assistant](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems).
 
+## 2.0.13 - 2025-12-09
+
+- Updated matterbridge to [3.4.3](https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md#343---2025-12-12).
+- Updated matterbridge-hass to [1.0.1](https://github.com/Luligu/matterbridge-hass/blob/main/CHANGELOG.md#101---2025-12-12).
+
+A new release of the add-on will force the Supervisor to rebuild the container.
+
 ## 2.0.12 - 2025-12-09
 
 - Updated matterbridge to [3.4.2](https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md#342---2025-12-05).
