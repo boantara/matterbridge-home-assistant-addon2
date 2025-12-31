@@ -5,7 +5,7 @@ FROM node:22-bookworm-slim
 WORKDIR /app
 
 # Cache bust: change this value to force a fresh install
-ARG CACHEBUST=20251223
+ARG CACHEBUST=20251231
 
 # Clean the cache to force the latest version of matterbridge and all the plugins
 RUN echo "Cache bust: $CACHEBUST" && npm cache clean -f

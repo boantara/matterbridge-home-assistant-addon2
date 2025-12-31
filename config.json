@@ -1,6 +1,6 @@
 {
     "name": "Matterbridge Home Assistant Add-on",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "slug": "matterbridge",
     "hostname": "matterbridge",
     "description": "Official Matterbridge Home Assistant Add-on",
