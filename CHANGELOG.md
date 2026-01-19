@@ -11,9 +11,15 @@ In the future, the add-on will be updated with each important new release of Mat
 
 # Changelog
 
-## Breaking changes
+## 2.0.17 - 2026-01-12
 
-- Removed support for armv7 architecture that is [deprecated by Home Assistant](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems).
+- Updated matterbridge to [3.4.7](https://matterbridge.io/CHANGELOG.html#347-2026-01-12).
+
+Also available the dev version of matterbridge and matterbridge-hass. Install matterbridge dev from the frontend 3 dots menu and matterbridge-hass@dev from Install plugin.
+
+## 2.0.16 - 2026-01-02
+
+- Updated matterbridge to [3.4.6](https://matterbridge.io/CHANGELOG.html#346-2026-01-02).
 
 ## 2.0.15 - 2025-12-31
 
