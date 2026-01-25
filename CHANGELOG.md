@@ -11,6 +11,11 @@ In the future, the add-on will be updated with each important new release of Mat
 
 # Changelog
 
+## 2.0.19 - 2026-01-25
+
+- Updated matterbridge to [3.5.1](https://matterbridge.io/CHANGELOG.html#351-2026-01-24).
+- Updated matterbridge-hass to [1.0.3](https://github.com/Luligu/matterbridge-hass/blob/main/CHANGELOG.md#103---2026-01-23).
+
 ## 2.0.18 - 2026-01-22
 
 - Updated matterbridge to [3.5.0](https://matterbridge.io/CHANGELOG.html#350-2026-01-20).

@@ -60,17 +60,17 @@ You should now see your Matterbridge add-on in the add-on store and be able to *
 
 Be patient because it can take a few minutes.
 
-Enable **Start on boot**, **Auto update** and **Show in sidebar**.
+Enable **Start on boot**, **Autoupdate** and **Add to sidebar**.
 
 The Watchdog is not used because Matterbridge always restarts with docker.
 
-Click on **BUILD** or **REBUILD**.
+Click on **Build** or **Rebuild**.
 
-The building process on a Home Assistant Green takes around 1 minute.
+The building process on a Home Assistant Green takes around 2-3 minute.
 
 Starting Matterbridge the first time after a rebuild takes time too because it will reload all plugins that were already registered.
 
-To open the Matterbridge frontend click on **OPEN WEB UI**.
+To open the Matterbridge frontend click on **Open web UI**.
 
 You may be asked to install the Home Assistant Matter Server: confirm the default installation.
 
@@ -91,11 +91,11 @@ After updating the add-on or rebuilding it, in the log you will see messages lik
 [18:16:18.973] [Matterbridge] Plugin matterbridge-example-dynamic-platform reinstalled.
 ```
 
-This is normal in this context and means that Matterbridge detected that in the new image the plugins are not present and will install them from npm.
+This is normal in this context and means that Matterbridge detected that in the new image the plugins are not present and will install them from npm using the latest version.
 
 If you were using a plugin installed from a tarball, you need to reinstall it manually.
 
-If you were using a dev version of plugin, you need to reinstall the dev version manually.
+If you were using a dev version of plugin, it will be reinstalled with the latest dev version.
 
 ## Home Assistant restart and reboot
 
@@ -109,7 +109,7 @@ In this cases rebuild the add-on to get the latest versions of Matterbridge and 
 
 ## How to configure the mdns
 
-Since Home Assistant exposes a lot of interfaces to the containers, is better to set the matter mdns interface in the Matterbridge Settings page.
+Since Home Assistant exposes a lot of interfaces to the containers, is mandatory to set the matter mdns interface in the Matterbridge Settings page.
 
 ![image](https://github.com/user-attachments/assets/bdaa91ea-4c87-4aeb-9cec-dd99be0ec8dc)
 
