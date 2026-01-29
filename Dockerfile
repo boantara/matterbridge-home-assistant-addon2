@@ -1,17 +1,14 @@
 # Base image
-FROM node:22-bookworm-slim
+FROM node:22-slim
 
 # Set working directory
 WORKDIR /app
 
 # Cache bust: change this value to force a fresh install
-ARG CACHEBUST=20260125
+ARG CACHEBUST=20260129
 
 # Clean the cache to force the latest version of matterbridge and all the plugins
 RUN echo "Cache bust: $CACHEBUST" && npm cache clean -f
-
-# Globally install Matterbridge
-RUN npm install -g matterbridge --omit=dev
 
 # Copy the run script to the container
 COPY run.sh /app/run.sh

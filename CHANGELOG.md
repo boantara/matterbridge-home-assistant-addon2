@@ -2,14 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
-If you like this project and find it useful, please consider giving it a star on GitHub at https://github.com/Luligu/matterbridge-home-assistant-addon and sponsoring it at https://buymeacoffee.com/luligugithub.
+If you like this project and find it useful, please consider giving it a star on [GitHub](https://github.com/Luligu/matterbridge-home-assistant-addon) and sponsoring it.
 
-If you have problems updating the add-on after installing the new Supervisor, I suggest you uninstall the add-on, remove the add-on and install it fresh. No data will be lost.
-Remeber to enable **Start on boot**, **Auto update** and **Show in sidebar**.
-
-In the future, the add-on will be updated with each important new release of Matterbridge. This is to avoid that a full restart (like for a blackout) or a supervisor update downgrades the Matterbridge version with the latest built image of the add-on.
+<a href="https://www.buymeacoffee.com/luligugithub"><img src="https://matterbridge.io/assets/bmc-button.svg" alt="Buy me a coffee" width="120"></a>
 
 # Changelog
+
+## 2026.1.1 - 2026-01-29
+
+The add-on has been entirely redesigned:
+
+- added a configuration page where you can set the binding address for the matterbridge frontend and choose whether to install the latest dev or the latest stable release of matterbridge
+
+![Configuration](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
+
+- added a welcome message with information about the image (from the Home Assistant frontend navigate to Settings -> System -> Logs and select Matterbridge Home Assistant Add-on)
+
+![Welcome message](https://github.com/user-attachments/assets/e4e6c245-125c-4c52-a14d-e720e677f787)
+
+- the add-on always updates matterbridge with the latest stable or the latest dev on restart or rebuild
+
+- the plugins are reinstalled with the latest dev or the latest stable, depending on what was running before the restart or rebuild
 
 ## 2.0.19 - 2026-01-25
 

@@ -1,25 +1,30 @@
 {
     "name": "Matterbridge Home Assistant Add-on",
-    "version": "2.0.19",
+    "version": "2026.1.1",
     "slug": "matterbridge",
-    "hostname": "matterbridge",
     "description": "Official Matterbridge Home Assistant Add-on",
     "url": "https://github.com/Luligu/matterbridge-home-assistant-addon",
     "changelog": "https://github.com/Luligu/matterbridge-home-assistant-addon/blob/main/CHANGELOG.md",
-    "startup": "application",
-    "boot": "auto",
-    "ingress": true,
-    "ingress_port": 8283,
-    "panel_icon": "mdi:bridge",
-    "panel_title": "Matterbridge",
-    "map": [
-        "addons:rw",
-        "share:rw"
-    ],
     "arch": [
         "amd64",
         "aarch64"
     ],
+    "panel_title": "Matterbridge",
+    "panel_icon": "mdi:bridge",
+    "ingress": true,
+    "ingress_port": 8283,
+    "map": [
+        "addons:rw",
+        "share:rw"
+    ],
     "host_network": true,
-    "restart": "always"
+    "restart": "always",
+    "schema": {
+        "frontend_bind": "str",
+        "branch": "list(main|dev)"
+    },
+    "options": {
+        "frontend_bind": "0.0.0.0",
+        "branch": "main"
+    }
 }

@@ -1,0 +1,7 @@
+configuration:
+  branch:
+    name: Branch
+    description: Select which Matterbridge release channel to run.
+  frontend_bind:
+    name: Frontend bind address
+    description: Bind address for the Matterbridge Web UI. Keep 0.0.0.0 to access the Matterbridge frontend at http://homeassistant.local:8283. Set to 172.30.32.1 (Hassio interface) to allow access only through Hassio Ingress.
