@@ -8,6 +8,10 @@ If you like this project and find it useful, please consider giving it a star on
 
 # Changelog
 
+## 2026.1.3 - 2026-01-31
+
+- fixed frontend port
+
 ## 2026.1.2 - 2026-01-31
 
 - updated matterbridge to [3.5.2](https://matterbridge.io/CHANGELOG.html#352-2026-01-31).

@@ -69,4 +69,4 @@ fi
 
 # Start Matterbridge
 echo "🚀 Starting Matterbridge with args: $ARGS"
-exec matterbridge $ARGS --frontend 8080 --port 5590
+exec matterbridge $ARGS
