@@ -1,18 +1,8 @@
-# Base image
-FROM node:22-slim
+# Base image (from node:24-trixie-small) with s6 overlay packages installed.
+FROM luligu/matterbridge:s6-rc-base
 
-# Set working directory
-WORKDIR /app
+# Copy s6-rc rootfs files
+COPY rootfs /
 
-# Cache bust: change this value to force a fresh install
-ARG CACHEBUST=20260129
-
-# Clean the cache to force the latest version of matterbridge and all the plugins
-RUN echo "Cache bust: $CACHEBUST" && npm cache clean -f
-
-# Copy the run script to the container
-COPY run.sh /app/run.sh
-RUN chmod +x /app/run.sh
-
-# Start the application using the run.sh script
-CMD [ "/app/run.sh" ]
+# Ensure matterbridge service scripts are executable (defensive)
+RUN chmod +x /etc/s6-overlay/s6-rc.d/matterbridge/run /etc/s6-overlay/s6-rc.d/matterbridge/finish

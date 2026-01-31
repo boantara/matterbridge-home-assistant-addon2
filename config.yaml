@@ -1,0 +1,31 @@
+name: Matterbridge Home Assistant Application
+version: 2026.1.2
+slug: matterbridge
+description: Matterbridge Home Assistant Application
+url: "https://github.com/Luligu/matterbridge-home-assistant-addon"
+changelog: "https://github.com/Luligu/matterbridge-home-assistant-addon/blob/main/CHANGELOG.md"
+
+arch:
+  - amd64
+  - aarch64
+
+panel_title: Matterbridge
+panel_icon: mdi:bridge
+
+ingress: true
+ingress_port: 8080
+
+map:
+  - addons:rw
+
+host_network: true
+startup: services
+init: false
+
+schema:
+  frontend_bind: str
+  branch: list(main|dev)
+
+options:
+  frontend_bind: 0.0.0.0
+  branch: main

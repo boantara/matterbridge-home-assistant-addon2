@@ -1,4 +1,4 @@
-# Matterbridge Official Home Assistant Add-on
+# <img src="https://matterbridge.io/assets/matterbridge.svg" alt="Matterbridge Logo" width="32px" height="32px"> &nbsp;&nbsp;&nbsp; Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -8,19 +8,27 @@ If you like this project and find it useful, please consider giving it a star on
 
 # Changelog
 
+## 2026.1.2 - 2026-01-31
+
+- updated matterbridge to [3.5.2](https://matterbridge.io/CHANGELOG.html#352-2026-01-31).
+
+- added **luligu/matterbridge:s6-rc-base** as base image: the image is built on **Debian 13** (trixie-slim) with **Node.js 24** and integrates the **s6-rc overlay** system
+
+- added the **s6-rc overlay** system used by the Home Assistant Supervisor
+
 ## 2026.1.1 - 2026-01-29
 
-The add-on has been entirely redesigned:
+The application (formerly known as add-on) has been entirely redesigned:
 
 - added a configuration page where you can set the binding address for the matterbridge frontend and choose whether to install the latest dev or the latest stable release of matterbridge
 
 ![Configuration](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
 
-- added a welcome message with information about the image (from the Home Assistant frontend navigate to Settings -> System -> Logs and select Matterbridge Home Assistant Add-on)
+- added a welcome message with information about the image (from the Home Assistant frontend navigate to Settings -> System -> Logs and select Matterbridge Home Assistant Application)
 
-![Welcome message](https://github.com/user-attachments/assets/e4e6c245-125c-4c52-a14d-e720e677f787)
+![Welcome message](https://github.com/user-attachments/assets/8c5f26ed-9d07-4a57-9649-c301986e02dd)
 
-- the add-on always updates matterbridge with the latest stable or the latest dev on restart or rebuild
+- the application always updates matterbridge with the latest stable or the latest dev on restart or rebuild
 
 - the plugins are reinstalled with the latest dev or the latest stable, depending on what was running before the restart or rebuild
 
