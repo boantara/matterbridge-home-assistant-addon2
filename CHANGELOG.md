@@ -32,7 +32,7 @@ The application (formerly known as add-on) has been entirely redesigned:
 
 - added a configuration page where you can set the binding address for the matterbridge frontend and choose whether to install the latest dev or the latest stable release of matterbridge
 
-![Configuration](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
+![Configuration](https://github.com/user-attachments/assets/b94aac2a-1dfc-4334-a4ec-c1165d8c7c83)
 
 - added a welcome message with information about the image (from the Home Assistant frontend navigate to Settings -> System -> Logs and select Matterbridge Home Assistant Application)
 
