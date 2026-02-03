@@ -8,7 +8,7 @@ If you like this project and find it useful, please consider giving it a star on
 
 # Changelog
 
-## 2026.1.4 - 2026-02-03
+## 2026.2.1 - 2026-02-03
 
 - added **free memory** and **total memory** info in the Welcome message on start.
 - added **Force update** configuration. Leave it active unless you have [issue](https://github.com/Luligu/matterbridge-home-assistant-addon/issues/37) installing the new version from npm.
