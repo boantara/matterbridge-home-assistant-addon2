@@ -36,7 +36,7 @@ The application (formerly known as add-on) has been entirely redesigned:
 
 - added a welcome message with information about the image (from the Home Assistant frontend navigate to Settings -> System -> Logs and select Matterbridge Home Assistant Application)
 
-![Welcome message](https://github.com/user-attachments/assets/cf1a092a-6d2b-49cf-a342-c5c62509d83d))
+![Welcome message](https://github.com/user-attachments/assets/cf1a092a-6d2b-49cf-a342-c5c62509d83d)
 
 - the application always updates matterbridge with the latest stable or the latest dev on restart or rebuild
 
