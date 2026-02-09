@@ -8,6 +8,11 @@ If you like this project and find it useful, please consider giving it a star on
 
 # Changelog
 
+## 2026.2.2 - 2026-02-09
+
+- Updated matterbridge to [3.5.3](https://matterbridge.io/CHANGELOG.html#353-2026-02-06).
+- Updated matterbridge-hass to [1.0.4](https://github.com/Luligu/matterbridge-hass/blob/main/CHANGELOG.md#104---2026-02-04).
+
 ## 2026.2.1 - 2026-02-03
 
 - added **free memory** and **total memory** info in the Welcome message on start.
