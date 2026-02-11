@@ -7,4 +7,4 @@ configuration:
     description: Bind address for the Matterbridge Web UI. Leave 0.0.0.0 to access the Matterbridge UI at http://homeassistant.local:8283. Set to 172.30.32.1 (Ingress interface) to allow access only through Home Assistant Ingress.
   force_update:
     name: Force update
-    description: Whether to force update Matterbridge on restart. If true, Matterbridge will be reinstalled from npm on every restart avoiding potentially outdated cached versions. Set to false if your host has limited available memory and resources.
+    description: Whether to force update Matterbridge on restart. If true, Matterbridge will be reinstalled from npm on every restart avoiding potentially outdated cached versions. Set to false only if your host has limited available memory and resources.
