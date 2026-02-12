@@ -123,7 +123,7 @@ If you were using a dev version of a plugin, it will be reinstalled with the lat
 
 ## How to configure the Matter mDNS
 
-Since Home Assistant exposes a lot of interfaces to the containers, it is mandatory to set the **matter mdns interface** in the Matterbridge Settings page.
+Since Home Assistant exposes a lot of interfaces to the containers, it is **mandatory** to set the **matter mdns interface** in the Matterbridge Settings page.
 
 ![Matterbridge settings](https://github.com/user-attachments/assets/50f89b9c-f450-4702-95cf-ee5359e2af31)
 
