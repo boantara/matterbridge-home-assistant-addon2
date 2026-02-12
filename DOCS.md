@@ -40,7 +40,7 @@ The Matterbridge storage and the Matterbridge plugins storage persist when you u
 
 When you restart, build or rebuild the application, Matterbridge will reload all plugins that were previously registered (it takes time so be patient).
 
-The Application can run on arm64 and amd64 archs (armv7 arch has been [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant).
+The Application can run on `arm64` and `amd64` archs (`armv7` arch has been [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant and is not available on the manifest of modern Node.Js 24 images).
 
 The image (luligu/matterbridge:s6-rc-base) is built on **Debian 13** (trixie-slim) with **Node.js 24** and integrates the **s6-rc overlay** system.
 
@@ -132,3 +132,17 @@ You can get the correct interface name from the **Network Adapter** panel. From 
 In this case the correct name is end0 but your system can have a different interface.
 
 ![Network configuration](https://github.com/user-attachments/assets/3217ed7c-f5ae-49d9-8155-10966fd05609)
+
+## Security
+
+During installation you may see in the log a warning that looks scary, for example:
+
+```text
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+```
+
+This warning does not come from Matterbridge code.
+
+It is emitted by a transitive dependency (the `archiver` package) that pulls in an older `glob` version. Matterbridge does not depend on this version of `glob` directly.
+
+In short: you can safely ignore this message; it is a dependency warning, not a Matterbridge vulnerability.
