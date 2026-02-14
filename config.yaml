@@ -1,5 +1,5 @@
 name: Matterbridge Home Assistant Application
-version: 2026.2.3
+version: 2026.2.4
 slug: matterbridge
 description: Matterbridge Home Assistant Application
 url: "https://github.com/Luligu/matterbridge-home-assistant-addon"
@@ -8,6 +8,8 @@ changelog: "https://github.com/Luligu/matterbridge-home-assistant-addon/blob/mai
 arch:
   - amd64
   - aarch64
+
+image: luligu/matterbridge
 
 panel_title: Matterbridge
 panel_icon: mdi:bridge

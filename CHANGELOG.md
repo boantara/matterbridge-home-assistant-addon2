@@ -8,6 +8,11 @@ If you like this project and find it useful, please consider giving it a star on
 
 # Changelog
 
+## 2026.2.4 - 2026-02-14
+
+- Removed the build stage and use the image built in the Matterbridge pipeline.
+- Updated matterbridge to [3.5.4](https://matterbridge.io/CHANGELOG.html#354-2026-02-13).
+
 ## 2026.2.3 - 2026-02-11
 
 - Updated matterbridge-hass to [1.0.6](https://github.com/Luligu/matterbridge-hass/blob/main/CHANGELOG.md#106---2026-02-10).
