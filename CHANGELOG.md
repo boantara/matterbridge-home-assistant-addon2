@@ -10,7 +10,7 @@ If you like this project and find it useful, please consider giving it a star on
 
 ## 2026.2.4 - 2026-02-14
 
-- Removed the build stage and use the image built in the Matterbridge pipeline. This should also reduce the backup size and time.
+- Removed the build stage and use the image built in the Matterbridge pipeline. This should contribute to reduce the backup size and time. Thanks [tronikos](https://github.com/tronikos).
 - Updated matterbridge to [3.5.4](https://matterbridge.io/CHANGELOG.html#354-2026-02-13).
 
 ## 2026.2.3 - 2026-02-11
