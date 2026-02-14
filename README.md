@@ -34,11 +34,11 @@ If you like this project and find it useful, please consider giving it a star on
 
 The official Matterbridge Home Assistant Application (formerly known as add-on) allows you to run [Matterbridge](https://matterbridge.io) with the Home Assistant Supervisor.
 
-All Matterbridge features work correctly in the official application (e.g. you can update Matterbridge itself or the plugins without issues).
+All Matterbridge features work correctly in the official application.
 
-The Matterbridge storage and the Matterbridge plugins storage persist when you update, rebuild or restart the application.
+The Matterbridge storage and the Matterbridge plugins storage persist when you update, restart or uninstall and install again the application.
 
-When you restart, build or rebuild the application, Matterbridge will reload all plugins that were previously registered (it takes time so be patient).
+When you start or restart the application, Matterbridge will reload all plugins that were previously registered (it takes time so be patient).
 
 The Application can run on `arm64` and `amd64` archs (`armv7` arch has been [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant and is not available on the manifest of modern Node.Js 24 images).
 

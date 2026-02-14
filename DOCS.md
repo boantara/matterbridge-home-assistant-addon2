@@ -34,15 +34,17 @@ If you like this project and find it useful, please consider giving it a star on
 
 The official Matterbridge Home Assistant Application (formerly known as add-on) allows you to run [Matterbridge](https://matterbridge.io) with the Home Assistant Supervisor.
 
-All Matterbridge features work correctly in the official application (e.g. you can update Matterbridge itself or the plugins without issues).
+All Matterbridge features work correctly in the official application.
 
-The Matterbridge storage and the Matterbridge plugins storage persist when you update, rebuild or restart the application.
+The Matterbridge storage and the Matterbridge plugins storage persist when you update, restart or uninstall and install again the application.
 
-When you restart, build or rebuild the application, Matterbridge will reload all plugins that were previously registered (it takes time so be patient).
+When you start or restart the application, Matterbridge will reload all plugins that were previously registered (it takes time so be patient).
 
 The Application can run on `arm64` and `amd64` archs (`armv7` arch has been [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant and is not available on the manifest of modern Node.Js 24 images).
 
 The image (luligu/matterbridge:s6-rc) is built on **Debian 13** (trixie-slim) with **Node.js 24** and integrates the **s6-rc overlay** system.
+
+Visit the [Documentation page](DOCS.md) for more information.
 
 # Changelogs
 
@@ -74,7 +76,7 @@ https://github.com/Luligu/matterbridge-home-assistant-addon
 
 then click on **ADD**.
 
-You should now see your Matterbridge add-on in the add-on store and be able to **INSTALL** it.
+You should now see your Matterbridge app in the app store and be able to **Install** it.
 
 Be patient because it can take a few minutes.
 
@@ -88,11 +90,11 @@ The first start (or a restart) on a Home Assistant Green takes around 2-3 minute
 
 Starting Matterbridge the first time takes time because it will reload all plugins that were already registered.
 
-To open the Matterbridge frontend click on **Open Web UI**.
+To open the Matterbridge frontend click on **Open Web UI** or click on the sidebar Matterbridge icon.
 
 You may be asked to install the Home Assistant Matter Server: confirm the default installation.
 
-The app works perfectly with the beta of Matter Server (we use the same matter library).
+The app works perfectly with the beta of Matter Server (we use the same matter.js library).
 
 This app has a configuration page where you can set the binding address for the matterbridge frontend and select to install the latest dev or the latest stable release of matterbridge.
 
@@ -102,11 +104,9 @@ This app has a configuration page where you can set the binding address for the 
 
 To avoid having any old version of matterbridge and plugins, always update the add-on when you are prompted to.
 
-A restart or reboot of Home Assistant will update the Matterbridge version.
-
 A restart of the application will update the Matterbridge version.
 
-After updating the application, in the log you will see messages like this:
+After updating or restarting the application, in the log you will see messages like this:
 
 ```
 [18:16:13.122] [Matterbridge] Error parsing plugin matterbridge-example-accessory-platform. Trying to reinstall it from npm...
