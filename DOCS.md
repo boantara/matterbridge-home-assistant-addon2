@@ -46,7 +46,7 @@ The image (luligu/matterbridge:s6-rc) is built on **Debian 13** (trixie-slim) wi
 
 # Changelogs
 
-[Add-on Changelog](https://github.com/Luligu/matterbridge-home-assistant-addon/blob/main/CHANGELOG.md)
+[App Changelog](https://github.com/Luligu/matterbridge-home-assistant-addon/blob/main/CHANGELOG.md)
 
 [Matterbridge Changelog](https://matterbridge.io/CHANGELOG.html)
 
@@ -64,7 +64,7 @@ Click here
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FLuligu%2Fmatterbridge-home-assistant-addon)
 
-or from your **Home Assistant** web page, go to **Settings**, select **Add-ons** and click on the **ADD-ON STORE** button.
+or from your **Home Assistant** web page, go to **Settings**, select **Apps** and click on the **Install app** button.
 
 In the upper-right corner, click on the **three dots menu**, select **Repositories** and paste this link
 
@@ -78,35 +78,35 @@ You should now see your Matterbridge add-on in the add-on store and be able to *
 
 Be patient because it can take a few minutes.
 
-Enable **Start on boot**, **Autoupdate** and **Add to sidebar**.
+Enable **Start on boot**, **Autoupdate** and **Show in sidebar**.
 
 The Watchdog is not used because Matterbridge always restarts with the s6-rc overlay system.
 
-Click on **Build** or **Rebuild**.
+Click on **Start**.
 
-The building process on a Home Assistant Green takes around 2-3 minutes.
+The first start (or a restart) on a Home Assistant Green takes around 2-3 minutes.
 
-Starting Matterbridge the first time after a rebuild takes time too because it will reload all plugins that were already registered.
+Starting Matterbridge the first time takes time because it will reload all plugins that were already registered.
 
-To open the Matterbridge frontend click on **Open web UI**.
+To open the Matterbridge frontend click on **Open Web UI**.
 
 You may be asked to install the Home Assistant Matter Server: confirm the default installation.
 
-The add-on works perfectly with the beta of Matter Server (we use the same matter library).
+The app works perfectly with the beta of Matter Server (we use the same matter library).
 
-This add-on has a configuration page where you can set the binding address for the matterbridge frontend and select to install the latest dev or the latest stable release of matterbridge.
+This app has a configuration page where you can set the binding address for the matterbridge frontend and select to install the latest dev or the latest stable release of matterbridge.
 
 ![Configuration page](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
 
 ## Supervisor behavior
 
-To avoid having any old version of matterbridge and plugins, always update the add-on and rebuild the container when you are prompted to.
+To avoid having any old version of matterbridge and plugins, always update the add-on when you are prompted to.
 
 A restart or reboot of Home Assistant will update the Matterbridge version.
 
-A restart or rebuild of the application will update the Matterbridge version.
+A restart of the application will update the Matterbridge version.
 
-After updating the application or rebuilding it, in the log you will see messages like this:
+After updating the application, in the log you will see messages like this:
 
 ```
 [18:16:13.122] [Matterbridge] Error parsing plugin matterbridge-example-accessory-platform. Trying to reinstall it from npm...
@@ -135,7 +135,7 @@ In this case the correct name is end0 but your system can have a different inter
 
 ## Security
 
-During installation you may see in the log a warning that looks scary, for example:
+During the installation you may see in the log a warning that looks scary, for example:
 
 ```text
 npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me

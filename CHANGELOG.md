@@ -10,7 +10,7 @@ If you like this project and find it useful, please consider giving it a star on
 
 ## 2026.2.4 - 2026-02-14
 
-- Removed the build stage and use the image built in the Matterbridge pipeline. This should contribute to reduce the backup size and time. Thanks [tronikos](https://github.com/tronikos).
+- Removed the build stage and use the ad hoc image built in the Matterbridge pipeline. This should contribute to reduce the backup size and time. Thanks [tronikos](https://github.com/tronikos).
 - Updated matterbridge to [3.5.4](https://matterbridge.io/CHANGELOG.html#354-2026-02-13).
 
 ## 2026.2.3 - 2026-02-11
@@ -26,8 +26,7 @@ If you like this project and find it useful, please consider giving it a star on
 ## 2026.2.1 - 2026-02-03
 
 - added **free memory** and **total memory** info in the Welcome message on start.
-- added **Force update** configuration. Leave it active unless you have [issue](https://github.com/Luligu/matterbridge-home-assistant-addon/issues/37) installing the new version from npm.
-- reduced the **restart time** adding persistent npm cache.
+- added **Force update** configuration. Leave it active unless you have issue installing the new version from npm.
 
 ## 2026.1.3 - 2026-01-31
 
