@@ -8,6 +8,11 @@ If you like this project and find it useful, please consider giving it a star on
 
 # Changelog
 
+## 2026.2.5 - 2026-02-20
+
+- Updated matterbridge to [3.5.5](https://matterbridge.io/CHANGELOG.html#355-2026-02-20).
+- Updated matterbridge-hass to [1.0.7](https://github.com/Luligu/matterbridge-hass/blob/main/CHANGELOG.md#107---2026-02-19).
+
 ## 2026.2.4 - 2026-02-14
 
 - Removed the build stage and use the ad hoc image built in the Matterbridge pipeline. This should contribute to reduce the backup size and time. Thanks [tronikos](https://github.com/tronikos).
