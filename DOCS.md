@@ -98,7 +98,7 @@ The app works perfectly with the beta of Matter Server (we use the same matter.j
 
 This app has a configuration page where you can set the binding address for the matterbridge frontend and select to install the latest dev or the latest stable release of matterbridge.
 
-![Configuration page](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
+![Configuration page](./assets/configuration.png)
 
 ## Supervisor behavior
 
@@ -125,13 +125,13 @@ If you were using a dev version of a plugin, it will be reinstalled with the lat
 
 Since Home Assistant exposes a lot of interfaces to the containers, it is **mandatory** to set the **matter mdns interface** in the Matterbridge Settings page.
 
-![Matterbridge settings](https://github.com/user-attachments/assets/50f89b9c-f450-4702-95cf-ee5359e2af31)
+![Matterbridge settings](./assets/settings.png)
 
 You can get the correct interface name from the **Network Adapter** panel. From the Home Assistant frontend navigate to Settings -> System -> Network.
 
 In this case the correct name is end0 but your system can have a different interface.
 
-![Network configuration](https://github.com/user-attachments/assets/3217ed7c-f5ae-49d9-8155-10966fd05609)
+![Network configuration](./assets/network.png)
 
 ## Security
 
