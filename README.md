@@ -44,4 +44,4 @@ The Application can run on `arm64` and `amd64` archs (`armv7` arch has been [dep
 
 The image (luligu/matterbridge:s6-rc) is built on **Debian 13** (trixie-slim) with **Node.js 24** and integrates the **s6-rc overlay** system.
 
-Visit the [Documentation page](DOCS.md) for more information.
+Visit the [Documentation page](https://github.com/Luligu/matterbridge-home-assistant-addon/blob/main/DOCS.md) for more information.
