@@ -8,9 +8,15 @@ If you like this project and find it useful, please consider giving it a star on
 
 # Changelog
 
-## 2026.4.4 - 2026-04-24
-
 > WARNING Possible issue upgrading the plugin: the domains button, remote and media_player include an OnOff cluster. This will not make it possible to merge the entities on the same endpoint: if you have Alexa or Google you may want to either black list those domains or to split their entities. If you already use filter by label on each entity, no further action required.
+
+## 2026.5.1 - 2026-05-01
+
+- Updated matterbridge to [3.7.7](https://matterbridge.io/CHANGELOG.html#377-2026-05-01).
+- Updated matterbridge to [3.7.6](https://matterbridge.io/CHANGELOG.html#376-2026-05-01).
+- Updated matterbridge-hass to [1.2.1](https://github.com/Luligu/matterbridge-hass/blob/main/CHANGELOG.md#121---2026-05-01).
+
+## 2026.4.4 - 2026-04-24
 
 - Updated matterbridge to [3.7.5](https://matterbridge.io/CHANGELOG.html#375-2026-04-24).
 - Updated matterbridge-hass to [1.2.0](https://github.com/Luligu/matterbridge-hass/blob/main/CHANGELOG.md#120---2026-04-24).
