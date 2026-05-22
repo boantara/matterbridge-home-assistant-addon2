@@ -8,6 +8,10 @@ If you like this project and find it useful, please consider giving it a star on
 
 # Changelog
 
+## 2026.5.4 - 2026-05-22
+
+- Updated matterbridge to [3.7.10](https://matterbridge.io/CHANGELOG.html#3710-2026-05-22).
+
 ## 2026.5.3 - 2026-05-15
 
 - Updated matterbridge to [3.7.9](https://matterbridge.io/CHANGELOG.html#379-2026-05-15).
