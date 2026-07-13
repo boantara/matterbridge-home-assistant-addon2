@@ -1,6 +1,6 @@
-name: Matterbridge
+name: Matterbridge SmartThings
 version: 2026.7.2
-slug: matterbridge
+slug: matterbridge2
 description: Matterbridge Home Assistant Application
 url: "https://github.com/Luligu/matterbridge-home-assistant-addon"
 changelog: "https://github.com/Luligu/matterbridge-home-assistant-addon/blob/main/CHANGELOG.md"
@@ -11,7 +11,7 @@ arch:
 
 image: luligu/matterbridge
 
-panel_title: Matterbridge
+panel_title: Matterbridge SmartThings
 panel_icon: mdi:bridge
 
 ingress: true
